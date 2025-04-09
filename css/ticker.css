@@ -5,7 +5,6 @@ instruction / marquee container
 */
 
 .instruct-marquee {
-  height: 50rem;
   margin-top: 2.4rem;
 }
 
@@ -16,13 +15,25 @@ Crypto ticker container
 */
 
 .crypto-ticker {
-  display: flex;
+
   font-family: system-ui, sans-serif;
   padding-block: 0.8rem;
   overflow: hidden;
   user-select: none;
   display: flex;
-  gap: 2rem;
+  /* gap: 2rem; */
+}
+
+.ticker--1 {
+  flex: 1;
+}
+
+.ticker--2 {
+  overflow: hidden;
+  user-select: none;
+  display: flex;
+  gap: 4rem;
+  z-index: 99999;
 }
 
 .crypto-ticker ul {
@@ -43,7 +54,7 @@ Crypto ticker container
 
 @keyframes scroll {
   to {
-    transform: translateX(calc(-100% - 20px));
+    transform: translateX(calc(-100% - 40px));
   }
 }
 
@@ -51,7 +62,6 @@ Crypto ticker container
   height: 100%;
   width: 20rem;
   margin-right: 2.4rem;
-  z-index: 999999;
 }
 
 .crypto-ticker ul li {
@@ -60,9 +70,6 @@ Crypto ticker container
   align-items: center;
   gap: 0.6rem;
 }
-
-
-
 
 
 .crypto-ticker ul li span {
@@ -81,9 +88,9 @@ Crypto ticker container
 
 /* DAILY CAHNGE COLORS */
 .cc-red {
-  color: #cd3a3a;
+  color: #cd3a3a !important;
 }
 
 .cc-green {
-  color: #168735;
+  color: #168735 !important;
 }
