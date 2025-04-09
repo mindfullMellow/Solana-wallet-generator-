@@ -91,6 +91,22 @@ Crypto ticker container
   color: #cd3a3a !important;
 }
 
+.cc-red::after {
+  content: '↓' !important;
+}
+
+
 .cc-green {
   color: #168735 !important;
 }
+
+.cc-green::after {
+  content: '↑' !important;
+}
+
+
+/*
+/////////////////////////////////////
+INSTRUCT container
+/////////////////////////////////////
+*/
