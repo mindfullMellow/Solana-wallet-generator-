@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="css/ticker.css">
 
   <!-- JS SCRIPTS -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
   <script src="script.js" defer></script>
   <script src="https://unpkg.com/@solana/web3.js@1.76.0/lib/index.iife.js"></script>
@@ -184,7 +186,30 @@
 
       </div>
 
-      <div class="instruct"></div>
+      <div class="instruct">
+        <ul>
+          <li>
+            <ion-icon name="arrow-forward-outline" class="icon"></ion-icon>
+            <p>Click on <span>Generate Wallet</span> to generate a wallet</p>
+          </li>
+
+          <li>
+            <ion-icon name="arrow-forward-outline" class="icon"></ion-icon>
+            <p>Ensure to <strong>save or print</strong> out generated wallets before usage</p>
+          </li>
+
+          <li>
+            <ion-icon name="arrow-forward-outline" class="icon"></ion-icon>
+            <p>Any wallet details not saved, cannot be recovered after the refreshing the page or genrating a new wallet
+            </p>
+          </li>
+
+          <li>
+            <ion-icon name="arrow-forward-outline" class="icon"></ion-icon>
+            <p>Refresh the page to see this message again</p>
+          </li>
+        </ul>
+      </div>
     </div>
 
   </main>

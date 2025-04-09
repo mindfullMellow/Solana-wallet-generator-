@@ -23,7 +23,7 @@ html {
 
 body {
   font-family: var(--font-family);
-  padding: 3.2rem 4.8rem 3.2rem 4.8rem;
+  padding: 3.2rem 4.8rem 1rem 4.8rem;
   color: var(--black-color);
   max-width: 110rem;
   height: auto;
@@ -54,7 +54,7 @@ header h3 {
 
 
 main {
-  margin: 5.2rem 0;
+  margin: 5.2rem 0 2.2rem;
   height: auto;
   width: 100%;
 }

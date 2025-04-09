@@ -218,7 +218,7 @@ fetch("http://127.0.0.1:5000/crypto-data")
         .querySelectorAll(`[class~="${crypto}-change"]`)
         .forEach((changeElement) => {
           const change = parseFloat(priceData["24h_change"]).toFixed(2); // Change this line
-          changeElement.innerText = `${change}%`;
+          changeElement.innerText = `(${change}%)`;
           changeElement.classList.remove("cc-red", "cc-green");
           changeElement.classList.add(
             parseFloat(change) < 0 ? "cc-red" : "cc-green"
