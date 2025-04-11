@@ -119,8 +119,10 @@ function printWallet() {
       <head>
         <title>Print Wallet</title>
         <style>
-          body { font-family: Arial, sans-serif; padding: 20px; }
+          body { font-family: "inter", sans-serif; padding: 20px; }
           .no-print { display: none !important; }
+          .pub-note{color:   color: #14F195;}
+          .p-note{color:   color: #ff4d4d;}
         </style>
       </head>
       <body>
@@ -180,6 +182,3 @@ function togglePrivateKey() {
     btn.classList.remove("warning");
   }
 }
-
-const containerA = document.querySelector("#walletDetails");
-const containerB = document.querySelector(".instruct");
