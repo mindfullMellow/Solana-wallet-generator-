@@ -15,4 +15,39 @@
   }
 }
 
-/* MEDIA QUERY FOR 910PX SCREEN WIDTH */
+/* MEDIA QUERY FOR 865PX SCREEN WIDTH */
+@media (max-width:54.0625em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+/* MEDIA QUERY FOR 770PX SCREEN WIDTH */
+@media (max-width:48.125em) {
+  header h1 {
+    font-size: 5.8rem;
+  }
+
+  .pub--copy {
+    gap: 5.2rem;
+  }
+
+  .pub--copy h3 {
+    justify-self: end;
+  }
+}
+
+/* MEDIA QUERY FOR 700PX SCREEN WIDTH */
+@media (max-width:43.75em) {
+  .windows-content {
+    display: none;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .mobile-view {
+    display: block;
+    visibility: visible;
+    pointer-events: auto;
+  }
+}
