@@ -182,3 +182,28 @@ function togglePrivateKey() {
     btn.classList.remove("warning");
   }
 }
+////////////////////////////////////////////////////////////////////
+//dynamically contrilling the sections
+document.addEventListener("DOMContentLoaded", function () {
+  const windowEl = document.querySelector(".windows-content");
+  const mobileEl = document.querySelector(".mobile-view");
+
+  function updateLayout() {
+    if (window.innerWidth > 700) {
+      windowEl.style.display = "block";
+      mobileEl.style.display = "none";
+    } else {
+      windowEl.style.display = "none";
+      mobileEl.style.display = "block";
+    }
+  }
+
+  // Initial layout setup
+  updateLayout();
+
+  // Update layout when the window is resized
+  window.addEventListener("resize", updateLayout);
+});
+
+console.log(window.innerWidth);
+console.log(windowEl, mobileEl);

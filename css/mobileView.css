@@ -5,7 +5,13 @@ toast message copied to clipboard
 */
 
 .mobile-view {
-  display: none;
-  visibility: hidden;
-  pointer-events: none;
+
+  height: 8rem;
+  width: auto;
+  background-color: red;
+}
+
+.mobile-view img {
+  height: 5.2rem;
+  width: 5.2rem;
 }

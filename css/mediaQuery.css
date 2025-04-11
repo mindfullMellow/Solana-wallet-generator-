@@ -38,16 +38,4 @@
 }
 
 /* MEDIA QUERY FOR 700PX SCREEN WIDTH */
-@media (max-width:43.75em) {
-  .windows-content {
-    display: none;
-    visibility: hidden;
-    pointer-events: none;
-  }
-
-  .mobile-view {
-    display: block;
-    visibility: visible;
-    pointer-events: auto;
-  }
-}
+@media (max-width:43.75em) {}
