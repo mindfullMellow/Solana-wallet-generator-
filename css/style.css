@@ -356,9 +356,3 @@ toast message copied to clipboard
   background-color: #dc3545 !important;
   color: white !important;
 }
-
-.mobile-view {
-  display: none;
-  visibility: hidden;
-  pointer-events: none;
-}
