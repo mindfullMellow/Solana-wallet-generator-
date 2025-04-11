@@ -1,0 +1,18 @@
+/* MEDIA QUERY FOR 1200PX SCREEN WIDTH */
+
+@media (max-width: 75em) {
+
+  body {
+    max-width: 120rem;
+  }
+}
+
+/* MEDIA QUERY FOR 910PX SCREEN WIDTH */
+
+@media (max-width: 56.875em) {
+  header h1 {
+    font-size: 6.8rem;
+  }
+}
+
+/* MEDIA QUERY FOR 910PX SCREEN WIDTH */
