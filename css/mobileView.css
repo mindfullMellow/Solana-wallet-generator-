@@ -4,14 +4,67 @@ toast message copied to clipboard
 /////////////////////////////////////
 */
 
-.mobile-view {
-
-  height: 8rem;
-  width: auto;
-  background-color: red;
+.mobile-view div {
+  display: flex;
+  flex-direction: column;
+  gap: 4.2rem;
+  padding: 2.4rem;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  /* background: rgba(18, 18, 18, 0.7);
+  border-radius: 1.6rem;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); */
 }
 
 .mobile-view img {
-  height: 5.2rem;
-  width: 5.2rem;
+  height: auto;
+  width: 70%;
+}
+
+.mobile-view p {
+  font-size: 1.6rem;
+  padding: 1.6rem;
+  color: var(--white-color);
+  background: rgba(18, 18, 18, 0.7);
+  border-radius: 1.6rem;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.mobile-view {
+  padding: 2rem;
+  /* background-color: white; */
+  /* Content background color */
+  border: 5px solid transparent;
+  /* Transparent border to create space */
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  background: linear-gradient(60deg, #ff7f50, #ff1493, #1e90ff, #32cd32);
+  /* background: linear-gradient(60deg, #9945ff, #64a8f2, #14f195); */
+  /* Gradient colors */
+  background-size: 400% 400%;
+  /* Stretch the gradient */
+  animation: move-border 5s linear infinite;
+  /* Animation: move the border */
+  border-radius: 15px;
+  z-index: 99999;
+  /* Add border radius */
+}
+
+@keyframes move-border {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
