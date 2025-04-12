@@ -4,6 +4,8 @@ toast message copied to clipboard
 /////////////////////////////////////
 */
 
+
+
 .mobile-view div {
   display: flex;
   flex-direction: column;
@@ -11,7 +13,6 @@ toast message copied to clipboard
   padding: 2.4rem;
   justify-content: center;
   align-items: center;
-  height: auto;
   width: 100%;
 }
 
@@ -32,21 +33,16 @@ toast message copied to clipboard
 
 .mobile-view {
   padding: 2rem;
-  /* Content background color */
   border: 5px solid transparent;
-  /* Transparent border to create space */
   position: relative;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-sizing: border-box;
   background: linear-gradient(60deg, #ff7f50, #ff1493, #1e90ff, #32cd32);
-  /* background: linear-gradient(60deg, #9945ff, #64a8f2, #14f195); */
-  /* Gradient colors */
   background-size: 400% 400%;
-  /* Stretch the gradient */
   animation: move-border 5s linear infinite;
-  /* Animation: move the border */
   border-radius: 15px;
-  /* Add border radius */
 }
 
 @keyframes move-border {

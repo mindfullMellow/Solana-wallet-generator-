@@ -56,8 +56,8 @@ header h3 {
 
 
 main {
-  margin: 5.2rem 0 2.2rem;
-  height: auto;
+  margin: 5.2rem 0 2.2rem 0;
+  /* height: auto; */
   width: 100%;
   flex: 1;
 }
@@ -260,7 +260,7 @@ footer
 /////////////////////////////////////
 */
 footer {
-  margin-top: auto;
+  /* margin-top: auto; */
   display: flex;
   padding: 2.4rem 0 0 0;
   flex-direction: column;
