@@ -1,7 +1,7 @@
 "use strict";
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // js code to fecth crypto data
-fetch("http://127.0.0.1:5000/crypto-data")
+fetch("https://solana-wallet-generator-backend-folder.onrender.com/crypto-data")
   .then((res) => res.json())
   .then((data) => {
     // Loop through each coin's data
