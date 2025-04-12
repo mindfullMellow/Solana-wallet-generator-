@@ -159,3 +159,8 @@ INSTRUCT container
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
+
+.container {
+  max-width: 110rem;
+  margin: 0 auto;
+}

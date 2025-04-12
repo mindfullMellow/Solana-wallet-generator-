@@ -13,10 +13,6 @@ toast message copied to clipboard
   align-items: center;
   height: auto;
   width: 100%;
-  /* background: rgba(18, 18, 18, 0.7);
-  border-radius: 1.6rem;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); */
 }
 
 .mobile-view img {
