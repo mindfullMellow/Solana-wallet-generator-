@@ -36,7 +36,6 @@ toast message copied to clipboard
 
 .mobile-view {
   padding: 2rem;
-  /* background-color: white; */
   /* Content background color */
   border: 5px solid transparent;
   /* Transparent border to create space */
@@ -51,7 +50,6 @@ toast message copied to clipboard
   animation: move-border 5s linear infinite;
   /* Animation: move the border */
   border-radius: 15px;
-  z-index: 99999;
   /* Add border radius */
 }
 
