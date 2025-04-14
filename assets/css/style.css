@@ -57,7 +57,6 @@ header h3 {
 
 main {
   margin: 5.2rem 0 2.2rem 0;
-  /* height: auto; */
   width: 100%;
   flex: 1;
 }
@@ -216,7 +215,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: start;
-  /* justify-self: end; */
 }
 
 
@@ -249,7 +247,6 @@ main {
   font-size: 1.6rem;
   font-style: italic;
   margin-top: auto;
-  /* color: #f23645; */
   color: #ff4d4d;
   align-self: flex-end;
 }
@@ -260,14 +257,12 @@ footer
 /////////////////////////////////////
 */
 footer {
-  /* margin-top: auto; */
   display: flex;
   padding: 2.4rem 0 0 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 0.8rem;
-  /* margin: 0; */
 }
 
 
@@ -342,8 +337,6 @@ toast message copied to clipboard
 
 
 /* private key hidden */
-/* Private Key Blur States */
-/* CSS */
 .private--key {
   filter: blur(8px);
   user-select: none;
