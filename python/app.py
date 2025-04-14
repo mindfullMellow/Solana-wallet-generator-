@@ -5,7 +5,12 @@ from flask import Flask, jsonify
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)
+
+# Allow only specific domains
+CORS(app, origins=[
+    "https://solanawalletgenerator.netlify.app",
+    "http://localhost:3000"
+])
 
 COINS_URL = "https://api.coingecko.com/api/v3/coins/markets"
 GLOBAL_URL = "https://api.coingecko.com/api/v3/global"
@@ -24,11 +29,9 @@ def get_crypto_data():
         return jsonify(CACHE["data"])
 
     try:
-        # Get total market cap
         global_resp = requests.get(GLOBAL_URL).json()
         total_market_cap = global_resp["data"]["total_market_cap"]["usd"]
 
-        # Get coin data
         params = {
             "vs_currency": "usd",
             "order": "market_cap_desc",
